@@ -1,9 +1,10 @@
 #include "data_streams.cpp"
 #include <windows.h>
 #include "datatypes/vcs_file.cpp"
+#include "libzpaq.cpp"
 
 using std::string;
-class VCS_File {
+class CompressableFile {
 
     private:
         // Use windows API to get file properties
@@ -30,10 +31,16 @@ class VCS_File {
     public:
         string filepath;
         FileProperties properties;
-        VCS_File(const string& filepath) {
+        File* file_object;
+
+        CompressableFile(string filepath) {
             this->filepath = filepath;
             this->properties = get_file_properties(filepath);
+            this->file_object = new File(filepath);
         }
 
-
+        void compress(std::string datastream) {
+            // Use libzpaq to compress file and save it to data stream on the same file
+            
+        }
 };
