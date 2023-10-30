@@ -1,7 +1,9 @@
 #include "data_streams.cpp"
 #include <windows.h>
 #include "datatypes/vcs_file.cpp"
-#include "libzpaq.cpp"
+#include <bit7z/bitarchivewriter.hpp>
+
+
 
 using std::string;
 class CompressableFile {
@@ -41,6 +43,7 @@ class CompressableFile {
 
         void compress(std::string datastream) {
             // Use libzpaq to compress file and save it to data stream on the same file
-            
+
+
         }
 };
