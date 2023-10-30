@@ -22,6 +22,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c6ba4d-871a-4b86-81a5-3dc4170273f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bit7z/include/bit7z/bit7zlibrary.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bit7zlibrary.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compression.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/compression.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +139,7 @@
       <updated>1698668870197</updated>
       <workItem from="1698668873359" duration="14000" />
       <workItem from="1698668924914" duration="2292000" />
-      <workItem from="1698672828799" duration="8111000" />
+      <workItem from="1698672828799" duration="8947000" />
     </task>
     <servers />
   </component>
