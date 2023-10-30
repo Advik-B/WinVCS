@@ -22,9 +22,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c6ba4d-871a-4b86-81a5-3dc4170273f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/autocommit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/BUILD.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bit7z.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bit7zlibrary.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchivecreator.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchivehandler.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchiveopener.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveeditor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveitem.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveiteminfo.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveitemoffset.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchivereader.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchivewriter.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressionlevel.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressionmethod.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitdefines.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/biterror.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitexception.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitextractor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfilecompressor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfileextractor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitformat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfs.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitgenericitem.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitinputarchive.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bititemsvector.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitmemcompressor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitmemextractor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitoutputarchive.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitpropvariant.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitstreamcompressor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitstreamextractor.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bittypes.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitwindows.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Debug/bit7z.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Debug/bit7z.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Release/bit7z.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compression.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/compression.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libzpaq.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libzpaq.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +77,13 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -69,16 +118,22 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Advik/Documents/Github/WinVCS/autocommit.py",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Advik\Documents\Github\WinVCS" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.autocommit">
     <configuration name="WinVCS" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WinVCS" TARGET_NAME="WinVCS" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WinVCS" RUN_TARGET_NAME="WinVCS">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -89,6 +144,32 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="autocommit" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="WinVCS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/autocommit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.WinVCS" />
+      <item itemvalue="Python.autocommit" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +181,7 @@
       <updated>1698668870197</updated>
       <workItem from="1698668873359" duration="14000" />
       <workItem from="1698668924914" duration="2292000" />
-      <workItem from="1698672828799" duration="6417000" />
+      <workItem from="1698672828799" duration="7815000" />
     </task>
     <servers />
   </component>
