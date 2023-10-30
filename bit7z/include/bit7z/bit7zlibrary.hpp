@@ -57,7 +57,7 @@ class Bit7zLibrary final {
     public:
         Bit7zLibrary( const Bit7zLibrary& ) = delete;
 
-        Bit7zLibrary( Bit7zLibrary&& ) = delete;
+        Bit7zLibrary( Bit7zLibrary&& ) = default;
 
         auto operator=( const Bit7zLibrary& ) -> Bit7zLibrary& = delete;
 
