@@ -8,11 +8,11 @@
 ## How it works
 WinVCS uses NTFS's Alternate Data Streams to store the contents of files. It also uses a SQLite database to store the metadata of the files.
 
-For more information on how it works, see [thiojoe's video]([thiojoe_video]).
+For more information on how it works, see [thiojoe's video](https://www.youtube.com/watch?v=3BWTo87oCwc).
 
 ## Some background
-I was watching [thiojoe's video]([thiojoe_video])
-[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)]([thiojoe_video])
+I was watching [thiojoe's video](https://www.youtube.com/watch?v=3BWTo87oCwc)
+[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)](https://www.youtube.com/watch?v=3BWTo87oCwc)
 when I started reading the comments.
 Almost all of them were about how they would hide their "homework" from their parents...
 
@@ -25,7 +25,3 @@ bwcbiz, if you're reading this, thank you for the idea! You started an itch that
 this is just a proof of concept and a learning experience for me, so don't expect it to be perfect.
 
 Also, please don't use this in production. it will only work on NTFS file systems and using any cloud storage will result in data loss.
-
-<!-- Variables -->
-
-[thiojoe_video]: https://www.youtube.com/watch?v=3BWTo87oCwc
