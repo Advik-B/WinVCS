@@ -3,6 +3,11 @@
 #include "datatypes/vcs_file.cpp"
 #include <bit7z/bitarchivewriter.hpp>
 
+Bit7zLibrary initBit7z() {
+    using namespace bit7z;
+    Bit7zLibrary lib{"lib/7z.dll"};
+    return lib;
+}
 
 
 using std::string;
@@ -42,7 +47,12 @@ class CompressableFile {
         }
 
         void compress(std::string datastream) {
-            // Use libzpaq to compress file and save it to data stream on the same file
+            // Use bit7z to compress the file
+            using namespace bit7z;
+            Bit7zLibrary lib = initBit7z();
+            BitArchiveWriter archive{lib, BitFormat::SevenZip};
+            archive.addFile(this->filepath);
+            
 
 
         }
