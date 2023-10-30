@@ -8,11 +8,11 @@
 ## How it works
 WinVCS uses NTFS's Alternate Data Streams to store the contents of files. It also uses a SQLite database to store the metadata of the files.
 
-For more information on how it works, see [thiojoe's video](https://www.youtube.com/watch?v=3BWTo87oCw).
+For more information on how it works, see [thiojoe's video]([thiojoe_video]).
 
 ## Some background
-I was watching [thiojoe's video](thiojoe_video)
-[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)](thiojoe_video)
+I was watching [thiojoe's video]([thiojoe_video])
+[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)]([thiojoe_video])
 when I started reading the comments.
 Almost all of them were about how they would hide their "homework" from their parents...
 
