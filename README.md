@@ -11,8 +11,8 @@ WinVCS uses NTFS's Alternate Data Streams to store the contents of files. It als
 For more information on how it works, see [thiojoe's video](https://www.youtube.com/watch?v=3BWTo87oCw).
 
 ## Some background
-I was watching [thiojoe's video](https://www.youtube.com/watch?v=3BWTo87oCw)
-[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)](https://www.youtube.com/watch?v=3BWTo87oCwc&t=703s)
+I was watching [thiojoe's video](thiojoe_video)
+[![video_thumbnail](https://img.youtube.com/vi/3BWTo87oCwc/maxresdefault.jpg)](thiojoe_video)
 when I started reading the comments.
 Almost all of them were about how they would hide their "homework" from their parents...
 
@@ -25,3 +25,7 @@ bwcbiz, if you're reading this, thank you for the idea! You started an itch that
 this is just a proof of concept and a learning experience for me, so don't expect it to be perfect.
 
 Also, please don't use this in production. it will only work on NTFS file systems and using any cloud storage will result in data loss.
+
+<!-- Variables -->
+
+[thiojoe_video]: https://www.youtube.com/watch?v=3BWTo87oCwc
