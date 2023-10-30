@@ -1,74 +1,80 @@
-// WinAPI
 #include <windows.h>
 #include <iostream>
-#include <fstream>
 #include <string>
 
 class File {
 private:
     std::string path;
-    std::fstream file;
+    HANDLE hFile;
+
 public:
-    File(std::string path) {
-        this->path = path;
-    }
+    File(std::string path) : path(path), hFile(NULL) {}
 
-    void open() {
-        this->file.open(this->path, std::ios::in | std::ios::out | std::ios::binary);
-    }
-
-    // Write method, take in BINARY data as a parameter
-    void write(char* data, std::string datastream="") {
-        if (datastream != "") {
-            // Open the file temporarily with the datastream (file:datastream)
-            std::fstream temp_file(this->path + ":" + datastream, std::ios::in | std::ios::out | std::ios::binary);
-            // Write the data to the file
-            temp_file.write(data, sizeof(data));
-            // Close the file
-            temp_file.close();
-
-        } else {
-            this->file.write(data, sizeof(data));
-        }
-    }
-
-    // Read method, takes in size of data to read as a parameter, if the size is -1, read the whole file
-    template<typename T>
-    T read(int size=-1, std::string datastream="") {
-        if (datastream != "") {
-            // Open the file temporarily with the datastream (file:datastream)
-            std::fstream temp_file(this->path + ":" + datastream, std::ios::in | std::ios::out | std::ios::binary);
-            // Read the data from the file
-            T data;
-            if (size == -1) {
-                temp_file.read((char*)&data, sizeof(data));
-            } else {
-                temp_file.read((char*)&data, size);
-            }
-            // Close the file
-            temp_file.close();
-            // Return the data
-            return data;
-
-        } else {
-            // Read the data from the file
-            T data;
-            if (size == -1) {
-                this->file.read((char*)&data, sizeof(data));
-            } else {
-                this->file.read((char*)&data, size);
-            }
-            // Return the data
-            return data;
-        }
+    bool open() {
+        hFile = CreateFile(path.c_str(), GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+        return (hFile != INVALID_HANDLE_VALUE);
     }
 
     void close() {
-        this->file.close();
+        if (hFile != NULL) {
+            CloseHandle(hFile);
+            hFile = NULL;
+        }
     }
 
-    // ~File is just close() in this case
+    void write(char* data, size_t size, std::string datastream = "") {
+        if (hFile == NULL) {
+            std::cerr << "File is not open!" << std::endl;
+            return;
+        }
+
+        if (datastream != "") {
+            std::string alternateStream = path + ":" + datastream;
+            HANDLE hStream = CreateFile(alternateStream.c_str(), GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+            if (hStream != INVALID_HANDLE_VALUE) {
+                DWORD bytesWritten;
+                WriteFile(hStream, data, static_cast<DWORD>(size), &bytesWritten, NULL);
+                CloseHandle(hStream);
+            } else {
+                std::cerr << "Failed to open alternate data stream." << std::endl;
+            }
+        } else {
+            DWORD bytesWritten;
+            WriteFile(hFile, data, static_cast<DWORD>(size), &bytesWritten, NULL);
+        }
+    }
+
+    template <typename T>
+    T read(int size = -1, std::string datastream = "") {
+        T data;
+        if (hFile == NULL) {
+            std::cerr << "File is not open!" << std::endl;
+            return data;
+        }
+
+        HANDLE hStream;
+        if (datastream != "") {
+            std::string alternateStream = path + ":" + datastream;
+            hStream = CreateFile(alternateStream.c_str(), GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+        } else {
+            hStream = hFile;
+        }
+
+        if (hStream != INVALID_HANDLE_VALUE) {
+            DWORD bytesRead;
+            if (size == -1) {
+                ReadFile(hStream, &data, sizeof(data), &bytesRead, NULL);
+            } else {
+                ReadFile(hStream, &data, static_cast<DWORD>(size), &bytesRead, NULL);
+            }
+            CloseHandle(hStream);
+        } else {
+            std::cerr << "Failed to open alternate data stream." << std::endl;
+        }
+        return data;
+    }
+
     ~File() {
-        this->close();
+        close();
     }
 };
