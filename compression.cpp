@@ -2,13 +2,15 @@
 #include <windows.h>
 #include "datatypes/vcs_file.cpp"
 #include <bit7z/bitarchivewriter.hpp>
+#include <filesystem>
 
-Bit7zLibrary initBit7z() {
+bit7z::Bit7zLibrary initBit7z() {
     using namespace bit7z;
     Bit7zLibrary lib{"lib/7z.dll"};
     return lib;
 }
 
+const std::string tempdir = std::filesystem::temp_directory_path().string();
 
 using std::string;
 class CompressableFile {
@@ -51,8 +53,11 @@ class CompressableFile {
             using namespace bit7z;
             Bit7zLibrary lib = initBit7z();
             BitArchiveWriter archive{lib, BitFormat::SevenZip};
-            archive.addFile(this->filepath);
-            
+            archive.addFile(this->filepath, datastream);
+            archive.compressTo(tempdir + "/temp.7z");
+            // Now, use the File object to read the compressed file
+            File *tempFileObject = new File(tempdir + "/temp.7z");
+            tempFileObject->open();
 
 
         }
