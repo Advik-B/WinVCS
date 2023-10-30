@@ -22,51 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c6ba4d-871a-4b86-81a5-3dc4170273f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/autocommit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/BUILD.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bit7z.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bit7zlibrary.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchivecreator.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchivehandler.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitabstractarchiveopener.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveeditor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveitem.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveiteminfo.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchiveitemoffset.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchivereader.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitarchivewriter.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressionlevel.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressionmethod.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitcompressor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitdefines.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/biterror.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitexception.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitextractor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfilecompressor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfileextractor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitformat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitfs.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitgenericitem.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitinputarchive.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bititemsvector.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitmemcompressor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitmemextractor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitoutputarchive.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitpropvariant.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitstreamcompressor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitstreamextractor.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bittypes.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/include/bit7z/bitwindows.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Debug/bit7z.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Debug/bit7z.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bit7z/lib/x64/Release/bit7z.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compression.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/compression.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libzpaq.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libzpaq.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +137,7 @@
       <updated>1698668870197</updated>
       <workItem from="1698668873359" duration="14000" />
       <workItem from="1698668924914" duration="2292000" />
-      <workItem from="1698672828799" duration="7815000" />
+      <workItem from="1698672828799" duration="8111000" />
     </task>
     <servers />
   </component>
