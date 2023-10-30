@@ -2,7 +2,7 @@
 > An NTFS-only version control system for Windows.
 
 >⚠️ This project is not ment to be used in production. It is a proof of concept and a learning experience for me.
-> It will only work on NTFS file systems and using any cloud storage will result in data loss.
+> It will only work on NTFS file systems and using any cloud storage WILL ALWAYS result in data loss.
 > Use at your own risk.
 
 ## How it works
